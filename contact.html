@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Apex Planet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+  <a href="index.html">
+    <img src="https://i.postimg.cc/cHZfzwzk/APEX.png" alt="LeafLine Logo" class="logo-img" />
+  </a>
+</div>
+      <ul class="nav-links">
+  <li><a href="index.html#home">Home</a></li>
+  <li><a href="todo.html">To-Do List</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error" id="emailError"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit">Submit</button>
+        <p id="successMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
